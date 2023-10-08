@@ -34,6 +34,7 @@ export default function App() {
         </>
       )}
       <button onClick={getAdvice}>Click Me!</button>
+      <Footer />
     </div>
   );
 }
@@ -41,7 +42,15 @@ export default function App() {
 function Message(props) {
   return (
     <p>
-      You have read <strong>{props.count}</strong> pieces of advices.
+      You have read <strong>{props.count}</strong> pieces of advice.
     </p>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <p>Created by Ezekiel Narvasa.</p>
+    </footer>
   );
 }
