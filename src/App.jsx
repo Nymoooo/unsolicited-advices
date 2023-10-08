@@ -29,7 +29,7 @@ export default function App() {
       <h1>Click the button below for unsolicited advices. </h1>
       {advice !== '' && (
         <>
-          <h2>{advice}</h2>
+          <h2>"{advice}"</h2>
           <Message count={count} />
         </>
       )}
